@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+    background-color: gray;
+}
+#sec1{
+    background-color: pink;
+}
+#sec2{
+    background-color: red;
+    color: white;
+}       
+#sec3{
+    background-color: yellow;
+}
+article {
+    position: relative;
+    width: 100%; 
+   
+    margin: 0px;
+    
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1{
+    text-align: center;
+    font-size: 175%;
+}
+h3{
+    font-size: 125%;
+    display: block;
+    float: right;
+    width: 35%;
+    margin: 0;
+    padding: 1%;
+    border: 1px solid black;
+    text-align: center;
+    margin-right: -1px;
+    margin-top: -1px;
+
+}
+
+.row{
+    width: 100%;
+}
+p{
+    color: black;
+    
+    font-weight: bold;
+    clear: both;
+    padding: 2%;
+    margin: 0;
+}
+/***************** media query *****************/
+@media(min-width:768px) and (max-width: 991px){
+    .tablet{
+        float: left;
+        width: 45%;
+        margin: 2.5%;
+        
+    }
+    #tab{
+        float: left;
+        width: 95%;
+        margin: 2.5%;
+        
+    }
+
+}
+@media (min-width:992px){
+    .desktop{
+        float: left;
+        width: 30%;
+        margin: 1.6%;
+        
+        
+    }
+}
+@media (max-width:767px){
+    .phone{
+        float: left;
+        width: 95%;
+        margin: 2.5%;
+        
+        
+    }
+}
