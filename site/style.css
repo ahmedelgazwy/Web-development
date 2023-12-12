@@ -2,3 +2,13 @@ body{
     background-color:bisque;
     font-size: larger;
 }
+*{
+    box-sizing: border-box;
+}
+div.content{
+    margin: 10px ;
+    background-color: yellow;
+    padding: 10px ;
+    border: 20px solid black;
+    width: 1000px;
+}

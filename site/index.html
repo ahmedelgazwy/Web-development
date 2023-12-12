@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
         P {
             width: 20px; color: blue;
+            margin-bottom: 15px;
         }
         
         .red {
@@ -31,12 +34,31 @@
             background-color: red;
             color: white;
         }
+        .img{
+            float: right;
+            position: relative;
+            right: 50%;
+            transform: translate(50%);
+            border: 2px solid black;
 
+            
+        }
+        ol{
+            clear: both;
+            
+        }
+        /***************** media query *****************/
+        @media (min-width:1200px){
+            ol{
+                margin: 0px;
+                padding-inline-start:20px
+            }
+        }
     </style>
 </head>
 <body>
   <h1>Hello Again</h1>
-    <img src="download.jpg" alt="test photo" width="400" height="250">
+    <img class="img" src="download.jpg" alt="test photo" width="400" height="250">
   
   <ol>
     <li id="learn">learn basic front end
@@ -51,7 +73,11 @@
 
   </ol> 
   <p>just testing the color to problem</p>
+  <div class="content">This paragraph is some nonsensical wisdom by ChatGPT:Life is a profound journey, a mosaic of experiences that we navigate through the tapestry of time. It unfolds in unpredictable ways, weaving together moments of joy, sorrow, growth, and introspection. Each day presents a canvas upon which we paint the colors of our emotions, aspirations, and relationships. In the face of challenges, life beckons us to discover resilience within ourselves, encouraging personal evolution and the pursuit of meaning. It is a dynamic interplay of highs and lows, a constant dance of adaptation to the ever-changing rhythm of existence. Life's tapestry is enriched by the threads of human connections, love, and shared experiences, reminding us of our interconnectedness. As we traverse the intricate paths of our individual narratives, life invites us to savor the beauty of the present, cherish memories of the past, and embrace the uncertainties of the future with a sense of wonder and anticipation. In essence, life is a captivating narrative, and each one of us contributes a unique and irreplaceable chapter to the grand story of humanity. </div>
   <a href="https://youtube.com" target="_blank">youtube channel</a>
   <div><a href="#learn">the important part</a></div>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
